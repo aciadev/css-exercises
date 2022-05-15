@@ -3,6 +3,7 @@
   border: 4px solid midnightblue;
   width: 400px;
   height: 300px;
+  display: flex;
 }
 
 .box {
@@ -12,4 +13,29 @@
   border: 6px solid maroon;
   width: 80px;
   height: 80px;
+  margin: auto;
 }
+
+/* Second solution*/
+
+/* instead of margin: auto; add below 
+values to the container
+align-items: center;
+justify-content: center; */
+
+/* Comment form stackoverflow.com
+The auto margin applies only to the flex item 
+and centers that one flex item within the container.
+
+Second folution centers items from the container level. 
+This code will center all items.
+
+But the most important difference, for practical purposes, 
+may be the behavior when a flex item exceeds the size of 
+the container. When this happens, you lose access to 
+parts of the item when using the container-level code. 
+The item disappears from the screen and is not accessible 
+via scroll.
+
+To overcome this problem, use margin: auto for centering 
+to work properly. */
